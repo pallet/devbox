@@ -24,7 +24,7 @@ devbox aws 'AWS-Key' 'AWS-Secret'
 In a git directory, run:
 
 ```shell
-devbox rsync github-user1 github-user2 …
+devbox start github-user1 github-user2 …
 ```
 
 ## Customisation
