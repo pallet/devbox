@@ -19,6 +19,8 @@ export CLI_SCRIPT_URL="https://raw.github.com/pallet/devbox/stable/bin/devbox"
 # Symbol for the main entry point in the jar
 export CLI_MAIN_SYM="com.palletops.devbox"
 
+export CLI_URL="https://github.com/pallet/devbox/releases/download/0.0.0.1/devbox-0.0.0.1.jar"
+
 
 # ----------------------------------------------------------------------
 
@@ -75,7 +77,6 @@ function self_install {
   fi
   echo "Downloading ${CLI_CMD_NAME} to $CLI_JAR now..."
   mkdir -p "$(dirname "$CLI_JAR")"
-  CLI_URL="http://tbd"
   $HTTP_CLIENT "$CLI_JAR.pending" "$CLI_URL"
   if [ $? == 0 ]; then
       # TODO: checksum
