@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+DIR=$(dirname $0)
+JAVA=${JAVA:-java}
+CLJMAIN_JAVA=$JAVA grench main com.palletops.devbox $*
